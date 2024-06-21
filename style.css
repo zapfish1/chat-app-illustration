@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none outside none;
+}
+
+footer,
+header {
+  width: 100%;
+}
+
+:root {
+  --color-pale-violet: hsl(276, 100%, 81%);
+  --color-moderate-violet: hsl(276, 55%, 52%);
+  --color-moderate-violet-transparent: hsla(276, 55%, 52%, 0.1);
+  --color-desaturated-dark-violet: hsl(271, 15%, 43%);
+  --color-very-dark-cyan: hsl(192, 100%, 9%);
+  --color-grayish-blue: hsl(206, 6%, 79%);
+  --color-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --color-dark-grayish-violet: hsl(270, 7%, 64%);
+
+  --color-light-magenta: hsl(293, 100%, 63%);
+  --color-light-violet: hsl(264, 100%, 61%);
+
+  --color-light-grayish-violet: hsl(270, 20%, 96%);
+  --color-very-dark-desaturated-blue: hsl(271, 36%, 24%);
+  --color-very-light-magenta: hsl(289, 100%, 72%);
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-light-grayish-violet);
+}
+
+main {
+  width: 30rem;
+
+  display: grid;
+  justify-items: center;
+}
+
+.avatar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: white;
+}
+
+.samuel {
+  display: flex;
+  color: white;
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+
+  padding: 2rem 1rem 1rem 1rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0.5rem;
+}
+
+.samuel img {
+  width: 2rem;
+  border-radius: 100%;
+  outline: 1px solid white;
+}
+
+.name-avatar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.name {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.name p:first-child {
+  font-weight: 500;
+}
+
+.name p:last-child {
+  font-size: 0.7rem;
+  color: var(--color-light-grayish-violet);
+}
+
+.phone {
+  border: 10px solid white;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  margin: 4rem 2rem 4rem 2rem;
+}
+
+.messages {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.messages p {
+  padding: 0.8rem;
+}
+
+.message-samuel {
+  display: grid;
+  gap: 1rem;
+
+  width: 70%;
+}
+
+.message-samuel .normal-text {
+  color: var(--color-moderate-violet);
+  background-color: var(--color-moderate-violet-transparent);
+
+  border-radius: 1rem 1rem 1rem 0.3rem;
+}
+
+.images-dog {
+  display: flex;
+  gap: 1rem;
+
+  padding-top: 1rem;
+}
+
+.images-dog img {
+  width: 4rem;
+  border-radius: 0.5rem;
+}
+
+.message-you {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding-left: 6.5rem;
+}
+
+.message-you p {
+  background-color: white;
+  color: var(--color-desaturated-dark-violet);
+  border-radius: 1rem 1rem 0.3rem 1rem;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.message-you p:last-child {
+  margin-bottom: 1rem;
+}
+
+.anormal-text {
+  background: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+
+  border-radius: 1rem 1rem 1rem 0.3rem;
+}
+
+.anormal-text p {
+  font-size: 0.7rem;
+}
+
+.circle-time {
+  display: flex;
+  align-items: center;
+}
+
+.anormal-text > p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.typing-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 3rem;
+
+  background-color: white;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.typing-box p {
+  color: var(--color-grayish-blue);
+}
+
+.typing-box i {
+  color: white;
+  background-color: var(--color-very-dark-desaturated-violet);
+  padding: 0.5rem;
+  border-radius: 100%;
+  font-size: 1rem;
+}
+
+.information {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+
+  text-align: center;
+
+  margin-bottom: 4rem;
+
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+.information h1 {
+  font-size: 2rem;
+  color: var(--color-very-dark-desaturated-violet);
+  font-weight: 600;
+}
+
+.information p {
+  color: var(--color-dark-grayish-violet);
+
+  width: 90%;
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+
+    justify-content: center;
+  }
+
+  .phone {
+    width: 416px;
+  }
+
+  .information {
+    align-content: center;
+    text-align: left;
+    justify-items: left;
+    width: 40%;
+  }
+}
