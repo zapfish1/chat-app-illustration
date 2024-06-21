@@ -175,18 +175,6 @@ main {
   color: white;
 }
 
-.samuel::before {
-  position: absolute;
-  content: "";
-  width: 10rem;
-  position: absolute;
-  left: 22.2%;
-  bottom: 87%;
-  height: 1.2rem;
-  background-color: white;
-  border-radius: 0 0 15px 15px;
-}
-
 .samuel {
   display: flex;
   color: white;
